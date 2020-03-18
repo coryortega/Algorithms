@@ -3,7 +3,24 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+
+  number_batches = 0
+  ingredient_ratios = []
+
+  for i in recipe:
+    if i in ingredients == True:
+      for j in ingredients:
+        if i == j:
+          # ingredient_ratios = [(math.floor(ingredients[j] // recipe[i]))]
+          ingredient_ratios.append(math.floor(ingredients[j] // recipe[i]))
+          # number_batches = math.floor(ingredients[j] // recipe[i])
+          return ingredient_ratios
+
+      else:
+        return ingredient_ratios.append(0)
+
+  print(ingredient_ratios)
+  return ingredient_ratios
 
 
 if __name__ == '__main__':

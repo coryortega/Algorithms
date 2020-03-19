@@ -7,9 +7,35 @@ For example, for a jar of cookies with `n = 3` (the jar has 3 cookies inside it)
  1. He can eat 1 cookie at a time 3 times
  2. He can eat 1 cookie, then 2 cookies 
  3. He can eat 2 cookies, then 1 cookie
- 4. He can eat 3 cookies all at once. 
+ 4. He can eat 3 cookies all at once.
 
 Thus, `eating_cookies(3)` should return an answer of 4.
+
+4 cookies:
+1. 1 + 1 + 1 + 1
+2. 1 + 1 + 2
+3. 1 + 3
+4. 2 + 1 + 1
+5. 2 + 2
+6. 3 + 1
+7. 1 + 2 + 1
+
+5 cookies:
+1. 2 + 3
+2. 3 + 2
+3. 1 + 1 + 3
+4. 1 + 3 + 1
+5. 3 + 1 + 1
+6. 2 + 2 + 1
+7. 1 + 2 + 2
+8. 2 + 1 + 2
+9. 1 + 1 + 1 + 1 + 1
+10. 1 + 1 + 1 + 2
+11. 1 + 1 + 2 + 1
+12. 1 + 2 + 1 + 1
+13. 2 + 1 + 1 + 1
+
+3:4 
 
 ## Testing
 

@@ -4,24 +4,15 @@ import math
 
 def recipe_batches(recipe, ingredients):
 
-  number_batches = 0
   ingredient_ratios = []
 
-  for i in recipe:
-    if i in ingredients == True:
-      for j in ingredients:
-        if i == j:
-          # ingredient_ratios = [(math.floor(ingredients[j] // recipe[i]))]
-          ingredient_ratios.append(math.floor(ingredients[j] // recipe[i]))
-          # number_batches = math.floor(ingredients[j] // recipe[i])
-          return ingredient_ratios
+  if recipe.keys() != ingredients.keys():
+    return 0
 
-      else:
-        return ingredient_ratios.append(0)
+  for key in ingredients.keys():
+    ingredient_ratios.append(ingredients[key]//recipe[key])
 
-  print(ingredient_ratios)
-  return ingredient_ratios
-
+  return min(ingredient_ratios)
 
 if __name__ == '__main__':
   # Change the entries of these dictionaries to test 

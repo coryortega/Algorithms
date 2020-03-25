@@ -3,8 +3,16 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
 
+  ingredient_ratios = []
+
+  if recipe.keys() != ingredients.keys():
+    return 0
+
+  for key in ingredients.keys():
+    ingredient_ratios.append(ingredients[key]//recipe[key])
+
+  return min(ingredient_ratios)
 
 if __name__ == '__main__':
   # Change the entries of these dictionaries to test 
